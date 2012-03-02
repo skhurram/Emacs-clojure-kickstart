@@ -1,3 +1,8 @@
+;; @jr0cket - communiy developer > http://blog.jr0cket.co.uk/
+
+;; Lightweight clojure setup for Emacs
+;; requires emacs24 and leiningen
+
 
 ;; Add Marmalade package archive for Emacs starter kit and other Emacs packages
 
@@ -23,3 +28,8 @@
     (package-install p)))
 
 
+;; Useful shortcuts for Clojure development
+
+;; Launch the Clojure repl via Leiningen - M-x clojure-jack-in 
+;; Global shortcut definition to fire up clojure repl and connect to it
+(global-set-key (kbd "C-c C-j") 'clojure-jack-in)
