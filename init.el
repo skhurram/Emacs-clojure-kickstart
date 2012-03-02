@@ -21,6 +21,7 @@
 
 (defvar my-packages '(starter-kit starter-kit-lisp starter-kit-eshell starter-kit-bindings
 	clojure-mode clojure-test-mode
+        rainbow-delimiters
 	markdown-mode ))
 
 (dolist (p my-packages)
@@ -28,8 +29,13 @@
     (package-install p)))
 
 
-;; Useful shortcuts for Clojure development
+;; Useful global settings as Emacs is used predominantely for Clojure development
 
 ;; Launch the Clojure repl via Leiningen - M-x clojure-jack-in 
 ;; Global shortcut definition to fire up clojure repl and connect to it
 (global-set-key (kbd "C-c C-j") 'clojure-jack-in)
+
+;; Colour mach parens and other structure characters to make code easy to follow
+(global-rainbow-delimiters-mode)
+
+
