@@ -22,6 +22,7 @@
 (defvar my-packages '(starter-kit starter-kit-lisp starter-kit-eshell starter-kit-bindings
 	clojure-mode clojure-test-mode
         rainbow-delimiters
+        ac-slime
 	markdown-mode ))
 
 (dolist (p my-packages)
