@@ -1,0 +1,9 @@
+# Ignore all Emacs libraries, repository information and personal Emacs usage
+auto-save-list/*
+backups/*
+elpa/*
+places
+url/*
+swank/*
+.smex-items
+
